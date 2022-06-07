@@ -1,13 +1,13 @@
-const receivesAFunction = callback => {
-   return callback();
+function receivesAFunction(cb) {
+    cb();
 }
 
-const returnsANamedFunction = function() {
-    return function namedFn() {
-        console.log('named function')
+function returnsANamedFunction() {
+    return function namedFunc() {
+        console.log('hi')
     }
 }
 
-function returnsAnAnonymousFunction () {
-    return function() {}
+function returnsAnAnonymousFunction() {
+    return function(){}
 }
